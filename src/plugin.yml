@@ -1,0 +1,23 @@
+main: com.zapdos26.coordinateshud.Main
+name: CoordinatesHud
+version: 1.0
+api-version: 1.14
+author: Zapdos26
+description: A plugin which displays your coordinates without the fuss of F3
+prefix: CoordinatesHUD
+commands:
+   coordinates:
+      description: Displays the list of commands and their functions
+      aliases:
+      - chud
+      - coords
+      - coordinateshud
+      usage: /coordinates toggle
+      permission: coordinateshud.toggle
+      permission-message: You do not have the coordinateshud.toggle permission.
+permissions:
+   coordinateshud.toggle:
+      description: Allows for /coordinates toggle command
+      default: true
+
+      

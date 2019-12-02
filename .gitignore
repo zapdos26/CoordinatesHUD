@@ -1,0 +1,55 @@
+
+I have java project that uses the Eclipse IDE.
+
+The Eclipse workspace is pointing to this directory:
+
+/home/srvimgprd/BUSPROJ/code_development/dime/executables/clientcode/java_axis/Eclipse
+I have placed a .gitignore file in the workspace directory "Eclipse". See below.
+
+What I need to do is to be able to download the items from the Eclipse directory onto a new machine and then compile with no issue.
+
+Are there any concrete steps to accomplish this task? When using the .gitignore file below, nothing shows up on the target machine.
+
+CONTENTS OF ECLIPSE DIRECTORY (on source machine): /home/srvimgprd/BUSPROJ/code_development/dime/executables/clientcode/java_axis/Eclipse
+
+java_axis/Eclipse> ls -lart
+total 48
+drwxr-xr-x 2 imgdev development 4096 2013-09-09 04:53 RemoteSystemsTempFiles
+drwxr-xr-x 4 imgdev development 4096 2013-09-09 04:55 Servers
+drwxr-xr-x 4 imgdev development 4096 2013-09-09 04:58 .metadata
+drwxr-xr-x 6 imgdev development 4096 2013-09-09 05:06 Axis2ClientDimeServer
+drwxr-xr-x 5 imgdev development 4096 2013-09-10 08:30 ..
+-rw-r--r-- 1 imgdev development  307 2013-09-10 08:31 .gitignore
+drwxr-xr-x 6 imgdev development 4096 2013-09-10 08:31 .
+CONTENTS OF .gitignore FILE
+
+*target*
+*.jar
+*.war
+*.ear
+*.class
+builder.xml
+
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+/bin/
